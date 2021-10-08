@@ -225,7 +225,7 @@ function getTranslations(lang) {
 document.execCommand('enableObjectResizing', false, 'false');
 
 // use events here, because sommernote's events are only for the editable container
-$('.vi-bone-container').on('blur', '.note-editor', function () {
+$('.vi-value-container').on('blur', '.note-editor', function () {
   $editor = $(this);
   $toolbar = $editor.find('.note-toolbar');
   $editable = $editor.find('.note-editable');
@@ -238,7 +238,7 @@ $('.vi-bone-container').on('blur', '.note-editor', function () {
 
   $codemirror.height($editable.height());
 });
-$('.vi-bone-container').on('focus', '.note-editor', function () {
+$('.vi-value-container').on('focus', '.note-editor', function () {
   $editor = $(this);
   $toolbar = $editor.find('.note-toolbar');
   $editable = $editor.find('.note-editable');

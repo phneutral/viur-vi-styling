@@ -74,6 +74,5 @@ gulp.task('vi', gulp.series([
 	"vi_css",
 	"vi_icons",
 	"vi_images"
-
 ]));
 
